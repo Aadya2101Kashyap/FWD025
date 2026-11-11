@@ -274,6 +274,64 @@ nav {
 
 
 
+/* SIGN IN PAGE*/
+
+.signin-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+        rgba(10, 20, 45, 0.65)
+        rgba(10, 20, 45, 0.65)
+    ), url("img");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* BLUR EFFECT */
+
+.signin-page ::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    backdrop-filter: blur(6px);
+    z-index: -1;
+}
+
+/* SIGN IN BOX */
+
+.singin-box {
+    background: white;
+    width: 320px;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* INPUT FIELDS */
+
+.signin-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 18px;
+    box-sizing: border-box;
+}
+
+/* BUTTON */
+
+.signin-box button {
+    width: 100%;
+    padding: 12px;
+    background: #5940AB;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
 /* FOOTER */
 
 footer {
@@ -316,5 +374,4 @@ footer {
 		flex-direction: column;
 	}
 }
-
 
