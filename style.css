@@ -281,34 +281,32 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(
-        rgba(10, 20, 45, 0.65)
-        rgba(10, 20, 45, 0.65)
-    ), url("img");
-
+    background-image: url("bg.jpeg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 
-/* BLUR EFFECT */
-
-.signin-page ::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    backdrop-filter: blur(6px);
-    z-index: -1;
-}
-
 /* SIGN IN BOX */
 
-.singin-box {
+.signin-box {
     background: white;
     width: 320px;
-    padding: 30px;
     border-radius: 10px;
-    text-align: center;
+    text-align: left;
+}
+
+.sb-top {
+	background-color:#0B2A5B;
+	height: 20px;
+	padding: 30px;
+	color: white;
+	font-weight: bolder;
+	border-radius: 10px 10px 0px 0px;
+}
+
+.sb-bottom {
+	padding: 30px;
 }
 
 /* INPUT FIELDS */
@@ -322,13 +320,16 @@ nav {
 
 /* BUTTON */
 
-.signin-box button {
-    width: 100%;
-    padding: 12px;
-    background: #5940AB;
-    color: white;
-    border: none;
-    cursor: pointer;
+.signin-button {
+	display: inline-block;
+	margin: 5px 80px;
+	padding: 10px 20px;
+	background-color: #733dd1;
+	color: white;
+	text-decoration: none; /* Removes the underline */
+	border-radius: 5px;	
+	text-align: center;
+	font-weight: bold;
 }
 
 
@@ -374,4 +375,3 @@ footer {
 		flex-direction: column;
 	}
 }
-
