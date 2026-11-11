@@ -33,6 +33,7 @@ nav {
 }
 
 
+
 .login-button {
 	background-color: white;
 	color: #0B2A5B !important;
@@ -333,7 +334,7 @@ form button:hover {
     width: 100%;
     min-height: 50px;
     box-sizing: border-box;
-    
+    align-items: center;
 }
 
 .admin-div{
